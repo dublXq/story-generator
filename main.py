@@ -1,8 +1,7 @@
-
-
-
+import work_data
 
 class Main:
+    story_manager = work_data.StoryManager()
 
     while True:
 
@@ -14,11 +13,13 @@ class Main:
     4. Показать список элементов
     5. Выйти""")
 
-        val = input("\nВыберите действие: ")
+        val = input("\nВыберите действие: \n")
 
         match val:
             case "1":
-                pass
+                print("-----------------------------------------------\n")
+                story_manager.random_story()
+                print("-----------------------------------------------")
             case "2":
                 pass
             case "3":
